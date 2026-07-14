@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-brand-dark text-brand-light font-sans antialiased selection:bg-brand-gold selection:text-brand-dark;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif tracking-wide text-brand-light;
+  }
+
+  p {
+    @apply text-brand-muted leading-relaxed font-sans;
+  }
+}
+
+@layer utilities {
+  /* Premium Glassmorphism */
+  .glass-panel {
+    background: rgba(22, 22, 26, 0.7);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(197, 168, 128, 0.1);
+  }
+
+  .glass-panel-hover {
+    @apply transition-all duration-300 hover:border-brand-gold/30 hover:shadow-[0_0_20px_rgba(197,168,128,0.1)];
+  }
+
+  /* Gold Border Gradient */
+  .gold-border {
+    position: relative;
+  }
+  
+  .gold-border::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #C5A880, transparent);
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0F121D;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #2B3349;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #E5C595;
+  }
+}
+
+/* Custom Swiper pagination styling to match the theme */
+.swiper-pagination-bullet-active {
+  background: #E5C595 !important;
+}
