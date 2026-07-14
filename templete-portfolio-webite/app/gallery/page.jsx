@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 import { TbEye, TbDownload, TbExternalLink } from "react-icons/tb";
 import LightboxModal from "@/components/LightboxModal";
 
@@ -320,7 +319,7 @@ export default function Gallery() {
     return (
         <div className="bg-brand-dark min-h-screen">
             {/* Header banner */}
-            <div className="relative py-24 md:py-32 border-b border-brand-gold/10 bg-[url('/portfolio_assets/backgrounds/projects_bg.png')] bg-cover bg-center overflow-hidden">
+            <div className="relative py-24 md:py-32 border-b border-brand-gold/10 bg-[url('/portfolio_assets/projects/exterior/exterior_01.jpg.jpeg')] bg-cover bg-center overflow-hidden">
                 {/* Dark Sapphire Overlay */}
                 <div className="absolute inset-0 bg-brand-dark/85"></div>
                 <div className="absolute top-[-50%] left-[-20%] w-[60%] h-[100%] rounded-full bg-brand-gold/5 blur-[120px] pointer-events-none"></div>
@@ -343,7 +342,7 @@ export default function Gallery() {
                         <button
                             key={tab.id}
                             onClick={() => setActiveCategory(tab.id)}
-                            className={`px-5 py-2 text-xs font-bold tracking-widest uppercase rounded-full transition-all duration-300 ${
+                            className={`px-3.5 py-2 sm:px-5 sm:py-2 text-[10px] sm:text-xs font-bold tracking-widest uppercase rounded-full transition-all duration-300 whitespace-nowrap ${
                                 activeCategory === tab.id
                                     ? "bg-brand-gold text-brand-dark shadow-lg shadow-brand-gold/15"
                                     : "bg-brand-card text-brand-muted hover:text-brand-light border border-brand-gold/5 hover:border-brand-gold/20"
@@ -355,19 +354,19 @@ export default function Gallery() {
                 </div>
 
                 {/* Grid */}
-                <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
+                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                     {filteredItems.map((item, index) => (
                         <div
                             key={item.id}
-                            className="group relative bg-brand-card rounded-lg overflow-hidden border border-brand-gold/5 shadow-md hover:border-brand-gold/20 transition-all duration-300 aspect-[4/3] cursor-pointer"
+                            className="group relative bg-brand-card rounded-lg overflow-hidden border border-brand-gold/5 shadow-md hover:border-brand-gold/20 transition-all duration-300 cursor-pointer h-fit"
                             onClick={() => openLightbox(index)}
                         >
-                            <Image
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            <img
                                 src={item.image}
-                                fill
                                 alt={item.name}
-                                className="object-cover transition-transform duration-700 group-hover:scale-103"
-                                sizes="(max-w-768px) 50vw, 300px"
+                                className="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-103"
+                                loading="lazy"
                             />
                             
                             {/* Hover info panel */}

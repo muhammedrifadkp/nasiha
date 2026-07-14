@@ -80,7 +80,7 @@ export default function About() {
     return (
         <div className="bg-brand-dark min-h-screen">
             {/* Header banner */}
-            <div className="relative py-24 md:py-32 border-b border-brand-gold/10 bg-[url('/portfolio_assets/backgrounds/about_bg.png')] bg-cover bg-center overflow-hidden">
+            <div className="relative py-24 md:py-32 border-b border-brand-gold/10 bg-[url('/portfolio_assets/works/bedroom/bedroom_02_v1.jpg.jpeg')] bg-cover bg-center overflow-hidden">
                 {/* Dark Sapphire Overlay */}
                 <div className="absolute inset-0 bg-brand-dark/85"></div>
                 <div className="absolute top-[-50%] left-[-20%] w-[60%] h-[100%] rounded-full bg-brand-gold/5 blur-[120px] pointer-events-none"></div>

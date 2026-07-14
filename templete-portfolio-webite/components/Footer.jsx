@@ -1,7 +1,18 @@
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
 import { TbMail, TbPhone, TbMapPin } from "react-icons/tb";
 
 export default function Footer() {
+    const [email, setEmail] = useState("");
+
+    const handleSubscribe = () => {
+        if (email.trim()) {
+            // Clear input after subscription
+            setEmail("");
+        }
+    };
     return (
         <div className="bg-brand-dark/95 border-t border-brand-gold/10 text-brand-light">
             <div className="container py-12 md:py-16">
@@ -45,16 +56,22 @@ export default function Footer() {
                     </div>
                     <div className="pt-4 md:pt-0">
                         <h2 className="pb-4 text-sm font-serif font-bold text-brand-gold tracking-widest uppercase">Stay Updated</h2>
-                        <div className="relative mb-4">
+                        <form onSubmit={(e) => { e.preventDefault(); handleSubscribe(); }} className="relative mb-4">
                             <input
                                 className="w-full px-4 pr-24 border border-brand-gold/20 bg-brand-card text-brand-light rounded-full h-11 text-xs focus:outline-none focus:border-brand-gold"
-                                type="text"
+                                type="email"
                                 placeholder="Email Address"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                                required
                             />
-                            <button className="absolute h-8 px-4 text-xs font-bold text-brand-dark bg-brand-gold rounded-full top-1.5 right-1.5 hover:bg-brand-gold-hover transition-colors">
+                            <button 
+                                type="submit"
+                                className="absolute h-8 px-4 text-xs font-bold text-brand-dark bg-brand-gold rounded-full top-1.5 right-1.5 hover:bg-brand-gold-hover transition-colors"
+                            >
                                 Subscribe
                             </button>
-                        </div>
+                        </form>
                         <p className="text-[10px] leading-relaxed text-brand-muted font-light">
                             By subscribing, you agree to receive design insights and architectural updates from me. Your data remains completely private.
                         </p>

@@ -165,7 +165,7 @@ export default function Projects() {
     return (
         <div className="bg-brand-dark min-h-screen">
             {/* Page Header */}
-            <div className="relative py-24 md:py-32 border-b border-brand-gold/10 bg-[url('/portfolio_assets/backgrounds/projects_bg.png')] bg-cover bg-center overflow-hidden">
+            <div className="relative py-24 md:py-32 border-b border-brand-gold/10 bg-[url('/portfolio_assets/projects/lumion/lumion_render_04_sunset.jpg.jpeg')] bg-cover bg-center overflow-hidden">
                 {/* Dark Sapphire Overlay for contrast */}
                 <div className="absolute inset-0 bg-brand-dark/85"></div>
                 <div className="absolute top-[-50%] left-[-20%] w-[60%] h-[100%] rounded-full bg-brand-gold/5 blur-[120px] pointer-events-none"></div>
@@ -188,7 +188,7 @@ export default function Projects() {
                         <button
                             key={cat.id}
                             onClick={() => setActiveCategory(cat.id)}
-                            className={`px-5 py-2 text-xs font-bold tracking-widest uppercase rounded-full transition-all duration-300 ${
+                            className={`px-3.5 py-2 sm:px-5 sm:py-2 text-[10px] sm:text-xs font-bold tracking-widest uppercase rounded-full transition-all duration-300 whitespace-nowrap ${
                                 activeCategory === cat.id 
                                     ? 'bg-brand-gold text-brand-dark shadow-lg shadow-brand-gold/15' 
                                     : 'bg-brand-card text-brand-muted hover:text-brand-light border border-brand-gold/5 hover:border-brand-gold/20'
