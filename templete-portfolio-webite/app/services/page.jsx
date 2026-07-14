@@ -144,11 +144,10 @@ export default function Services() {
                 {/* Services Grid */}
                 <div className="space-y-24">
                     {services.map((service, index) => (
-                        <div 
-                            key={service.id} 
-                            className={`grid items-center gap-12 lg:grid-cols-12 ${
-                                index % 2 === 0 ? '' : 'lg:flex-row-reverse'
-                            }`}
+                        <div
+                            key={service.id}
+                            className={`grid items-center gap-12 lg:grid-cols-12 ${index % 2 === 0 ? '' : 'lg:flex-row-reverse'
+                                }`}
                         >
                             {/* Image Section (lg:col-span-7) */}
                             <div className={`w-full lg:col-span-7 ${index % 2 === 0 ? 'lg:order-1' : 'lg:order-2'}`}>
@@ -165,9 +164,8 @@ export default function Services() {
                             </div>
 
                             {/* Content Section (lg:col-span-5) */}
-                            <div className={`w-full lg:col-span-5 p-8 bg-brand-card/30 rounded-xl border border-brand-gold/5 shadow-lg ${
-                                index % 2 === 0 ? 'lg:order-2' : 'lg:order-1'
-                            }`}>
+                            <div className={`w-full lg:col-span-5 p-8 bg-brand-card/30 rounded-xl border border-brand-gold/5 shadow-lg ${index % 2 === 0 ? 'lg:order-2' : 'lg:order-1'
+                                }`}>
                                 <div className="flex items-center gap-3 mb-4">
                                     {service.icon}
                                     <h3 className="text-2xl font-serif font-bold text-brand-light leading-tight">{service.name}</h3>

@@ -21,7 +21,7 @@ export default function HeroSection() {
                     <div className="flex items-center gap-3 mb-6">
                         <span className="w-2.5 h-2.5 bg-brand-gold rounded-full animate-pulse"></span>
                         <span className="text-xs font-bold tracking-widest text-brand-gold font-sans uppercase">
-                            Junior Architect & 3D Visualizer
+                            Architectural Designer & 3D Visualizer
                         </span>
                     </div>
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-serif leading-[1.1] mb-6 text-brand-light">
@@ -63,7 +63,7 @@ export default function HeroSection() {
                                 <Image
                                     src="/portfolio_assets/profile/nasiha-sara.png"
                                     fill
-                                    alt="Nasiha Sara - Junior Architect & 3D Visualizer"
+                                    alt="Nasiha Sara - Architectural Designer & 3D Visualizer"
                                     className="object-cover transition-transform duration-700 group-hover:scale-103"
                                     priority
                                     sizes="(max-w-768px) 100vw, 400px"
@@ -75,7 +75,7 @@ export default function HeroSection() {
                             <div className="mt-4 p-3 bg-brand-dark/60 rounded-lg border border-brand-gold/5 flex justify-between items-center">
                                 <div>
                                     <p className="text-[10px] text-brand-gold font-bold tracking-wider font-sans">Nasiha Sara</p>
-                                    <p className="text-xs text-brand-light font-medium mt-0.5">Junior Architect</p>
+                                    <p className="text-xs text-brand-light font-medium mt-0.5">Architectural Designer</p>
                                 </div>
                                 <div className="text-right">
                                     <p className="text-[10px] text-brand-gold font-bold tracking-wider font-sans">SPECIALIZATION</p>

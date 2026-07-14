@@ -12,7 +12,7 @@ export default function CatalogSwiperSection() {
         { src: "/portfolio_assets/projects/exterior/exterior_01.jpg.jpeg", alt: "Modern Villa Exterior Rendering" },
         { src: "/portfolio_assets/works/bedroom/bedroom_02_v1.jpg.jpeg", alt: "Master Bedroom Visualization" },
         { src: "/portfolio_assets/projects/lumion/lumion_render_04_sunset.jpg.jpeg", alt: "Lumion Sunset Exterior Design" },
-        { src: "/portfolio_assets/works/modular/shb_modular_v1.jpg.jpeg", alt: "Modular Kitchen Concept" },
+        { src: "/portfolio_assets/works/modular/shb_modular_v1.jpg.jpeg", alt: "Modular Bedroom Concept" },
         { src: "/portfolio_assets/works/bathroom/bedroom_02_bathroom_v1.jpg.jpeg", alt: "Modern Bathroom Interior" },
         { src: "/portfolio_assets/projects/rendering/render_01.jpg.jpeg", alt: "Interior Living Room Render" }
     ];

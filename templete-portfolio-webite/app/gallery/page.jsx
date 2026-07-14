@@ -128,27 +128,27 @@ export default function Gallery() {
         // Residential Interiors - Modular Systems
         {
             id: 14,
-            name: "Premium Modular Kitchen Elevation (V1)",
+            name: "Sleek Modular Bedroom Design (V1)",
             category: "interior",
             image: "/portfolio_assets/works/modular/shb_modular_v1.jpg.jpeg",
             tools: "3ds Max, V-Ray, Photoshop",
-            description: "L-shaped modular kitchen layout visualization with charcoal acrylic cabinet doors and gold accents."
+            description: "Cozy modern bedroom layout highlighting button-tufted headboard, warm vertical wood paneling, and elegant roman shades."
         },
         {
             id: 15,
-            name: "Modular Kitchen Breakfast Counter (V2)",
+            name: "Modular Bedroom Wardrobe Detailing (V2)",
             category: "interior",
             image: "/portfolio_assets/works/modular/shb_modular_v2.jpg.jpeg",
             tools: "3ds Max, V-Ray",
-            description: "Visual detailing the breakfast bar Counter, customized barstools, and linear lighting profiles."
+            description: "Perspective detailing the custom modular wardrobe system, sleek storage handles, and linear lighting profiles."
         },
         {
             id: 16,
-            name: "Modular Kitchen Opposite Perspective (V3)",
+            name: "Modular Bedroom Opposite Perspective (V3)",
             category: "interior",
             image: "/portfolio_assets/works/modular/shb_modular_v3.jpg.jpeg",
             tools: "3ds Max, V-Ray",
-            description: "Perspective highlighting custom pantry storage tower and refrigerator integration."
+            description: "Opposite perspective highlighting the dressing area, full-length mirror integration, and floating drawer units."
         },
 
         // Exterior Architecture & Visualizations

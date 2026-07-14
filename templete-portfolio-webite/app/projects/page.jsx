@@ -72,8 +72,8 @@ export default function Projects() {
         },
         {
             id: 7,
-            name: 'Sleek Modular Kitchen Design (V-Ray)',
-            description: 'High-end modular kitchen interior layout rendering, showing integrated cabinet storage, quartz countertops, and modern lighting fixtures.',
+            name: 'Sleek Modular Bedroom Design (V-Ray)',
+            description: 'Cozy and modern bedroom layout featuring a button-tufted headboard, warm vertical wood paneling, ambient pendant lighting, and elegant roman shades.',
             image: '/portfolio_assets/works/modular/shb_modular_v1.jpg.jpeg',
             category: 'interior',
             tools: '3ds Max, V-Ray, Photoshop',

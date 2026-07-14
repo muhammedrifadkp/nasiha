@@ -30,7 +30,7 @@ export default function About() {
             institution: "CADD Centre Training Services"
         },
         {
-            period: "2024",
+            period: "2026",
             degree: "AI Powered Smart Building Certificate",
             institution: "Professional BIM Seminar"
         }
@@ -92,10 +92,10 @@ export default function About() {
 
             <div className="container py-16">
                 {/* Profile Card and Summary Section */}
-                <div className="grid gap-12 lg:grid-cols-3 items-start">
+                <div className="grid gap-12 lg:grid-cols-3 items-start min-w-0">
                     
                     {/* Left: Profile Card */}
-                    <div className="group">
+                    <div className="group min-w-0">
                         <div className="relative overflow-hidden transition-all duration-500 rounded-xl bg-brand-card border border-brand-gold/15 p-4 shadow-xl hover:border-brand-gold/30">
                             {/* Profile Image */}
                             <div className="relative aspect-[3/4] rounded-lg overflow-hidden bg-brand-dark mb-6">
@@ -103,7 +103,7 @@ export default function About() {
                                     src="/portfolio_assets/profile/nasiha-sara.png"
                                     fill
                                     style={{objectFit: "cover"}}
-                                    alt="Nasiha Sara - Junior Architect"
+                                    alt="Nasiha Sara - Architectural Designer"
                                     className="transition-transform duration-700 group-hover:scale-102"
                                     sizes="(max-w-768px) 100vw, 400px"
                                 />
@@ -113,7 +113,7 @@ export default function About() {
                             {/* Profile Info */}
                             <div>
                                 <h2 className="text-2xl font-serif font-bold text-brand-light mb-1">Nasiha Sara</h2>
-                                <p className="text-xs font-semibold text-brand-gold tracking-widest uppercase mb-4">Junior Architect & Visualizer</p>
+                                <p className="text-xs font-semibold text-brand-gold tracking-widest uppercase mb-4">Architectural Designer & Visualizer</p>
 
                                 <div className="flex flex-col gap-3 text-sm text-brand-muted border-t border-brand-gold/10 pt-4">
                                     <div className="flex items-center gap-3">
@@ -145,11 +145,11 @@ export default function About() {
                     </div>
 
                     {/* Right: Tabbed Info Section */}
-                    <div className="lg:col-span-2 space-y-8">
+                    <div className="lg:col-span-2 space-y-8 min-w-0">
                         <div>
                             <h2 className="text-3xl font-serif font-bold text-brand-light mb-4">Professional Summary</h2>
                             <p className="text-brand-muted text-base md:text-lg mb-4 font-light leading-relaxed">
-                                Detail-oriented and creative Junior Architect, 3D Visualizer, and Revit Architect with a strong background in architectural drafting, high-end 3D modeling, and realistic rendering. I specialize in transforming complex design concepts into immersive visual experiences and highly accurate building models.
+                                Detail-oriented and creative Architectural Designer, 3D Visualizer, and Revit Architect with a strong background in architectural drafting, high-end 3D modeling, and realistic rendering. I specialize in transforming complex design concepts into immersive visual experiences and highly accurate building models.
                             </p>
                             <p className="text-brand-muted text-base md:text-lg mb-6 font-light leading-relaxed">
                                 With proven experience in residential interior modeling and commercial drafting, I bring a keen eye for detail, spatial planning, and aesthetic functionality to professional design projects. I seek to contribute fresh, creative BIM and visualization solutions to collaborative design teams.
@@ -157,7 +157,7 @@ export default function About() {
                         </div>
 
                         {/* Tab Buttons */}
-                        <div className="flex flex-wrap gap-2 border-b border-brand-gold/10">
+                        <div className="flex flex-row overflow-x-auto whitespace-nowrap no-scrollbar gap-2 border-b border-brand-gold/10 pb-px">
                             {[
                                 { id: 'profile', label: 'About Me' },
                                 { id: 'skills', label: 'Technical Skills' },
@@ -167,7 +167,7 @@ export default function About() {
                                 <button
                                     key={tab.id}
                                     onClick={() => setActiveTab(tab.id)}
-                                    className={`px-5 py-2.5 text-xs font-bold tracking-wider uppercase transition-colors rounded-t-lg ${
+                                    className={`px-5 py-2.5 text-xs font-bold tracking-wider uppercase transition-colors rounded-t-lg shrink-0 ${
                                         activeTab === tab.id 
                                             ? 'bg-brand-gold text-brand-dark' 
                                             : 'bg-brand-card/50 text-brand-muted hover:text-brand-light hover:bg-brand-card'

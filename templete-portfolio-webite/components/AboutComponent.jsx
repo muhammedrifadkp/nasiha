@@ -34,7 +34,7 @@ export default function AboutComponent() {
                     {/* Right: Intro & Statistics */}
                     <div className="w-full lg:col-span-6 order-1 lg:order-2 flex flex-col justify-center">
                         <p className="text-brand-muted text-base md:text-lg mb-8 font-light">
-                            As a Junior Architect and 3D Visualizer, my work sits at the intersection of structural intelligence and aesthetic storytelling. I leverage advanced tools like Autodesk Revit and Corona Renderer to construct highly accurate models and photorealistic visualizations, ensuring every layout, material texture, and light source is meticulously designed and executed.
+                            As an Architectural Designer and 3D Visualizer, my work sits at the intersection of structural intelligence and aesthetic storytelling. I leverage advanced tools like Autodesk Revit and Corona Renderer to construct highly accurate models and photorealistic visualizations, ensuring every layout, material texture, and light source is meticulously designed and executed.
                         </p>
                         
                         {/* Stats Grid */}

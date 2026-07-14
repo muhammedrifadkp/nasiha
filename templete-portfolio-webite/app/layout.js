@@ -22,8 +22,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${cormorant.variable} ${jakarta.variable}`}>
-      <body className="bg-brand-dark text-brand-light font-sans antialiased">
+    <html lang="en" className={`${cormorant.variable} ${jakarta.variable} overflow-x-hidden`}>
+      <body className="bg-brand-dark text-brand-light font-sans antialiased overflow-x-hidden">
         <Header />
         <main className="min-h-[calc(100vh-100px)]">
           {children}
